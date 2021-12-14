@@ -1,0 +1,51 @@
+{% extends "index.html" %}
+    {% block content %}
+    <title>About Me</title>
+</head>
+<body>
+    <div class="container p-5 bg-dark rounded-circle text-danger text-center">
+        <h1 id="header">About Me and Contact</h1>
+    </div>
+    <ul class="nav nav-tabs nav-justified">
+        <a class="navbar-brand" href="{{ url_for("views.homepage")}}">
+            <img src="./static/creepy_butler.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+          </a>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for("views.homepage")}}">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="{{ url_for("views.pastprojects")}}">Past Projects</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for("views.currentproject")}}">Current Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for("views.futureprojects")}}">Future Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{{ url_for("views.about")}}">About/Contact</a>
+          </li>
+      </ul>
+      <div class="container-fluid p-5 bg-dark"></div>
+      <div><h2 class="container p-1 text-center">About Me</h2></div>
+      <div><p class="container p-1 text-center">I always struggle with this one. I'm not the 
+          best at talking about myself! <br><br>
+          Ever since I was a young boy, way back in the 80s, I had a dream to become a game designer
+          and developer. But as you can guess, by both the time period and my age, this was a dream 
+          I would struggle to realise for a long time.<br>
+          I pursued IT as both a hobby and as an education, for which I found myself mocked and ostracised
+          by many people. This was not aided by my love of video games as gamers were rather unpopular
+          in that day and age.<br>
+          As my life progressed I managed to cobble together several IT based qualifications (and am still
+          collecting them to this day) in order to one day try to realise my childhood dream. Then I came across
+          a development engine known as Unity. Finally my prayers had been answered and I could begin my long,
+          arduous, journey into becoming a games developer. Since that discovery I have tried my hand at a few Projects
+          and learned multiple skills to aid me in my quest.<br>
+          it has been a struggle, but I am incredibly stubborn about this dream and refuse to let it die.
+    </p></div>
+    <div class="container-fluid p-3"></div>
+    <div class="container-fluid p-5 bg-dark"></div>
+    <div><h2 class="container p-1 text-center">Contacting Me</h2></div>
+    <div><p class="container p-1 text-center">E-mail: neomasaki@hotmail.com
+  </p></div>
+    {% endblock %}

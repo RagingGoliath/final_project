@@ -1,0 +1,43 @@
+{% extends "index.html" %}
+    {% block content %}
+    <title>Future Projects</title>
+</head>
+<body>
+    <div class="container p-5 bg-dark rounded-circle text-danger text-center">
+        <h1 id="header">Potential/Future Projects</h1>
+    </div>
+    <ul class="nav nav-tabs nav-justified">
+        <a class="navbar-brand" href="{{ url_for("views.homepage")}}">
+            <img src="./static/creepy_butler.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+          </a>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for("views.homepage")}}">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="{{ url_for("views.pastprojects")}}">Past Projects</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for("views.currentproject")}}">Current Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{{ url_for("views.futureprojects")}}">Future Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for("views.about")}}">About/Contact</a>
+          </li>
+      </ul>
+      <div class="container-fluid p-5 bg-dark"></div>
+      <div class="container-fluid p-3"></div>
+      <h1 class="container p-1 text-center">The Future</h1>
+        <div class="container p-1 text-center"><p>The future is a mystery...<br><br>
+            On a serious note, I do intend to re-pickup the Antarctic game once more,
+            if written correctly it could be a very enjoyable game.<br>
+            One thing that I will be desperately working on in the future is 
+            controlling my urge to make and insert easter eggs into my games.
+            Easter eggs are fun and add a further level of playability to a game 
+            but there are limits and I must prevent myself getting too into them.<br><br>
+            Beyond this I have no concrete plans as of yet, however my current project 
+            gives me plenty of work to do, especially with its complexity.
+        </p></div>
+    
+    {% endblock %}

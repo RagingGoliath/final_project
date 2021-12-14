@@ -1,0 +1,423 @@
+{% extends "index.html" %}
+    {% block content %}
+    <title>Past Projects</title>
+</head>
+<body>
+    <div class="container p-5 bg-dark rounded-circle text-danger text-center">
+        <h1 id="header">Past Projects</h1>
+    </div>
+    <ul class="nav nav-tabs nav-justified">
+        <a class="navbar-brand" href="{{ url_for("views.homepage")}}">
+            <img src="./static/creepy_butler.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+          </a>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for("views.homepage")}}">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="{{ url_for("views.pastprojects")}}">Past Projects</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for("views.currentproject")}}">Current Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for("views.futureprojects")}}">Future Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for("views.about")}}">About/Contact</a>
+          </li>
+      </ul>
+      <div class="container-fluid p-5 bg-dark"></div>
+
+    <h1 class="container p-1 text-center">The First One</h1>
+    <div class="container p-1 text-center"><p>My first ever game was a horde based survival game.
+        Sadly this game did not quite reach the zenith of its potential, this was due to
+        an unfortunate issue with the AI system I was using which would impact the performance
+        in a very large way.<br>
+        I did set up the entire game, including a leaderboard and high score system, to be a
+        competetive game, one that friends could happily play to beat each other's scores.
+        A co-operative mode was planned but the spawn issues put the game on the backburner.
+    </p></div>
+        <img id="myImg" class="mx-auto d-block" src="./static/Horde_Game.jpg" alt="Horde Game Menu" style="width:100%;max-width:300px">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+            
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+            
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        <script>
+            var modal = document.getElementById("myModal");
+
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+        </script>
+        <div class="container-fluid p-3"></div>
+        <div class="container-fluid p-5 bg-dark"></div>
+        <h1 class="container p-1 text-center">The Sellout One</h1>
+        <div class="container p-1 text-center"><p>My second attempt at a game was, unfortunately, based on the 
+            popular genre at the time.<br>
+            I started working on a battle royale style game, which I named Royale With Cheese as a working title.
+            I intended this game to be more heavily inspired by the classic Japanese movie, Battle Royale. This
+            however became more and more difficult as I realised I was out of my depths with such a chaotic
+            gameplay style. I placed this one on the backburner but with a very big intent to revisit the concept
+            once I have more experience and skills as it could be a truly fun game.
+        </p></div>
+        <img id="myImg2" class="mx-auto d-block" src="./static/royale_land.jpg" alt="Battle Royale" style="width:100%;max-width:300px">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+            
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+            
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        <script>
+            var modal = document.getElementById("myModal");
+
+            var img = document.getElementById("myImg2");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+        </script>
+        <div class="container-fluid p-3"></div>
+        <div class="container-fluid p-5 bg-dark"></div>
+    </div>
+    <div class="container p-1 text-center">
+        <p>At this point in my progression I realized that in order to continue I would need to learn how to 
+            properly use a 3D modelling system and promptly began my research into how to correctly use
+            3D Studio Max. While I had a certain level of success, I did find that I needed to brush up on skills
+            way more than I had, this still applies to this day but I have made progress with modelling.<br>
+            I came to find that once the task of modelling stopped being frustrating it rapidly became
+            very tedious. It can be a struggle to stay focused at times, but if a job is worth doing then it
+            is worth doing right.
+        </p></div>
+    <div class="row">
+        <div class="col">
+            <img id="myImg3" class="mx-auto d-block" src="./static/BFG.jpg" alt="3D Model - BFG 9000" style="width:100%;max-width:300px">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+            
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+            
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        <script>
+            var modal = document.getElementById("myModal");
+
+            var img = document.getElementById("myImg3");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+        </script>
+        </div>
+        <div class="col">
+        <img id="myImg4" class="mx-auto d-block" src="./static/Zabimaru.jpg" alt="3D Model - Zabimaru" style="width:100%;max-width:300px">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+            
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+            
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        <script>
+            var modal = document.getElementById("myModal");
+
+            var img = document.getElementById("myImg4");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+        </script>
+        </div>
+        <div class="col">
+        <img id="myImg5" class="mx-auto d-block" src="./static/Senbonzakura.jpg" alt="3D Model - Senbonzakura" style="width:100%;max-width:300px">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+            
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+            
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        <script>
+            var modal = document.getElementById("myModal");
+
+            var img = document.getElementById("myImg5");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+        </script>
+        </div>
+        <div class="container-fluid p-3"></div>
+        <div class="container-fluid p-5 bg-dark"></div>
+      </div>
+      <h1 class="container p-1 text-center">The "Beaten to the punch" One</h1>
+      <div class="container p-1 text-center">
+        <p>After learning some basics in 3D modelling I decided it would be a good idea to 
+            remake one of my childhood favourites as it appeared to have been forgotten to time.
+            The remake in question being Wonderboy: The Dragon's Trap. I had big plans for the game
+            and was excited to start it. Sadly, a short time after starting, I found out that I had been
+            too slow on the uptake and someone had already remade the game in an endearing 2D format,
+            complete with fully redrawn assets.<br>
+            This put a stop to that project and I sadly moved on.
+        </p></div>
+        <div class="col">
+            <img id="myImg6" class="mx-auto d-block" src="./static/WBR.jpg" alt="Wonderboy Remake" style="width:100%;max-width:300px">
+    
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+                
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+                
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+            <script>
+                var modal = document.getElementById("myModal");
+    
+                var img = document.getElementById("myImg6");
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+                }
+    
+                var span = document.getElementsByClassName("close")[0];
+    
+                span.onclick = function() {
+                modal.style.display = "none";
+                }
+            </script>
+            </div>
+            <div class="container-fluid p-3"></div>
+        <div class="container-fluid p-5 bg-dark"></div>
+      </div>
+      <h1 class="container p-1 text-center">The "shooting zombies" One</h1>
+      <div class="container p-1 text-center">
+        <p>At this point I decided to make a start on a video game version of a story
+            I had once written as a spoof of the Resident Evil franchise. Obviously I 
+            expanded, altered and updated many parts of the framework to make it more 
+            of a stand-alone story than the original spoof. Little did I know that this 
+            would become a persistent setting for games I would attempt to make from here on out.
+        </p></div>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="9"></button>
+            </div>
+          
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./static/Avy1.jpg" alt="Sports field overhead" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                    <h5>Sports field overhead</h5>
+                    <p>An overhead view of the sports field</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./static/Avy2.jpg" alt="Local street (day)" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                    <h5>Local street</h5>
+                    <p>A street nearby the main play area</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./static/Avy3.jpg" alt="Area overhead" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                    <h5>Area overhead</h5>
+                    <p>An overhead view of the whole play area so far</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./static/Avy4.jpg" alt="Area overhead 2" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                    <h5>Street overhead</h5>
+                    <p>An overhead view of the updated streets with gardens, fences etc</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./static/Street.jpg" alt="Local street (night)" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                    <h5>Local street</h5>
+                    <p>The same local street but viewed at night time</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./static/EI_v11.jpg" alt="Slight bug" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                    <h5>Physics be damned</h5>
+                    <p>This shouldn't happen!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./static/EI_v12.jpg" alt="Did gravity call?" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                    <h5>Gravity? What's that?</h5>
+                    <p>Being undead apparently stops gravity</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./static/EI_v13.jpg" alt="Advert billboard" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                    <h5>In-game ads</h5>
+                    <p>My answer to in-game ads was a billboard!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./static/EI_v14.jpg" alt="Advert billboard (temp)" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                    <h5>In-game ads</h5>
+                    <p>The default fallback wasn't quite as nice as Mr Torgue</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./static/EI_v15.jpg" alt="Tiny GDI" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block bg-dark">
+                    <h5>Tiny base</h5>
+                    <p>The GDI sure got shorter since the late 90s</p>
+                </div>
+              </div>
+            </div>
+            <!-- No buttons here to stop it conflicting with the last image-->
+          </div>
+        <div class="container-fluid p-3"></div>
+        <div class="container-fluid p-5 bg-dark"></div>
+        <h1 class="container p-1 text-center">The "The Thing" One</h1>
+      <div class="container p-1 text-center">
+        <p>I came across a bright idea at this point and decided that I would make a game 
+            loosely based on the classic movie, The Thing. While it was fun to play around with I 
+            ended up losing interest as the coding I was aiming for was just not working in the 
+            way it should. Things such as the outside temperature being sub-zero and causing injury
+            or death if the character ignored it for too long. While this idea hasn't been entirely
+            abandoned, it has been put further back in the queue while I attempt something a little
+            easier in the meantime. The game was based in the antarctic.
+        </p></div>
+        <div class="col">
+            <img id="myImg7" class="mx-auto d-block" src="./static/Antarctic.jpg" alt="Wonderboy Remake" style="width:100%;max-width:300px">
+    
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+                
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+                
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+            <script>
+                var modal = document.getElementById("myModal");
+    
+                var img = document.getElementById("myImg7");
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+                }
+    
+                var span = document.getElementsByClassName("close")[0];
+    
+                span.onclick = function() {
+                modal.style.display = "none";
+                }
+            </script>
+            </div>
+    {% endblock %}
